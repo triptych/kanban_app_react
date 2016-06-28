@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+/**
 import uuid from 'uuid';
 
 const notes = [
@@ -16,8 +18,10 @@ const notes = [
 ];
 
 console.log('Notes.jsx - notes:',notes);
+**/
 
-export default () => (
+
+export default ({notes}) => (
   <ul>{notes.map(note => 
       <li key={note.id}>{note.task}</li>
       )}</ul>
